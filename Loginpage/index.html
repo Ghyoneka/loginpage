@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+ </head>
+ <body>
+    <div class="ipr">
+        <img class="shu" src="images/shuriken.png" alt="">
+    <p class="up">Ebolt</p>
+    </div>
+   <div class="login">
+        <input type="image" class="log-in" src="images/icons8-log-in-24.png">
+        <p class="text1">Sign in with email</p>
+        <p class="subtext">Make a new doc to bring your words, data,<span><br></span> and teams together. For free
+        </p>
+        <form action="" autocomplete="on">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="&#xf0e0;  Email"> <br>
+            <label for="password"></label>
+            <input type="password" placeholder="&#xf023;  password" name="password" id="password">
+            <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+        </form>
+        <script>
+            const togglePassword = document.querySelector('#togglePassword');
+            const password = document.querySelector('#password');
+    
+            togglePassword.addEventListener('click', function () {
+                // Toggle the type attribute
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+    
+                // Toggle the eye / eye-slash icon
+                this.classList.toggle('fa-eye-slash');
+            });
+        </script>
+        <br>
+        <button class="button1">Get Started</button>
+        <p class="subtext2">or sign in with
+        </p>
+        <input type="image" class="gs" src="images/icons8-google-48.png" alt="g" onclick="window.location.href=www.accounts.google.com">
+        <input type="image" class="gs" src="images/icons8-facebook-50.png" alt="g" onclick="window.location.href=www.accounts.facebook.com">
+        <input type="image" class="gs" src="images/icons8-apple-30.png" alt="g" onclick="window.location.href=www.accounts.apple.com">
+    </div>
+</html>
+</body>
