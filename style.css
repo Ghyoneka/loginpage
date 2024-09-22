@@ -1,0 +1,141 @@
+body{
+    background:linear-gradient(to bottom, rgba(142, 202, 238, 0.75) ,rgba(253, 255, 254, 0.75)), url("images/clouds.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow-x: auto;
+}
+.ipr{
+    margin: 50px;
+}
+.up{
+    font-size: 15px;
+    font-family:sans-serif;
+    display: inline;
+}
+.shu{
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    border: solid;
+    border-radius: 7px;
+    background-color: rgb(152, 147, 147);
+    border: hidden;
+}
+.login{
+    text-align: center;
+    border: solid 0px;
+    border-radius: 30px;
+    background-image:linear-gradient(to bottom, #cbf3fd ,#fdfffe 30%);
+    margin: 150px auto;
+    padding: 35px 0px 30px 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 25%;
+}
+.subtext{
+    color: grey;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: -13px;
+    margin-bottom: 15px;
+}
+.subtext2{
+    color: grey;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.button1{
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(31, 27, 27);
+    padding: 10px 115px;
+    border: none;
+}
+.text1{
+    font-family:sans-serif;
+    font-size: 18px;
+}
+.gs{
+    height: 16px;
+    width: 16px;
+    border: solid 1px rgb(232, 231, 231);
+    border-radius: 10px;
+    padding: 8px 40px;
+    margin: auto 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+#email{
+    padding:10px 10px 10px 10px;
+    border-radius: 6px;
+    margin: 5px;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    width: 75%;
+    font-family: "Font Awesome 5 Free"; /* Solid icons */
+    font-weight: 550; /* Font weight for solid icons */
+    font-size: 9px; /* Adjust size as needed */
+}
+#password{
+    padding:10px 10px 10px 10px;
+    border-radius: 6px;
+    margin: 5px;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    width: 75%;
+    font-family: "Font Awesome 5 Free"; /* Solid icons */
+    font-weight: 550; /* Font weight for solid icons */
+    font-size: 9px; /* Adjust size as needed */
+}
+.log-in{
+    border: none;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px 15px;
+    margin: auto 0px;
+    border-radius: 15px;
+}
+
+
+        /* Media query for tablets (screens less than 768px wide) */
+        @media (max-width: 768px) {
+            .login {
+                width: 50%; /* Adjust the width for tablets */
+            }
+        }
+
+        /* Media query for mobile devices (screens less than 480px wide) */
+        @media (max-width: 480px) {
+            .login {
+                width: 90%; /* Adjust the width for small mobile devices */
+            }
+        }
+
+
+input[type="password"] {
+            padding-right: 40px; /* Space for the icon */
+            width: 100%;  /*Make the input field full width if needed */
+        }
+
+        /* Style for the toggle icon */
+        .toggle-password {
+            position: absolute;
+            right: 40px;
+            top: 74%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: grey;
+        }
+
+        /* Adjust the parent form container to position the icon */
+        .password-container
+        {
+            position: relative;
+            display: inline-block;
+        }
+
+        form {
+            position: relative; /* This makes the icon position relative to the form */
+        }
+
